@@ -1,0 +1,61 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <link rel="stylesheet" href="/static/styles.css">
+
+</head>
+<body>
+    <header>
+    <h1>Welcome to Book Store</h1>
+    <nav>
+    <a href="#home">Home</a>
+    <a href="#books">View our Books</a>
+    <a href="#about">About Book Store</a>
+    <a href="#reccomend">Recommend a Book</a>
+    </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <center>
+                <h2>Welcome to Book Store</h2>
+                <p>This is the homepage of the Book Store</p>
+                <p><a href="books">View our Books</a></p>
+            </center>
+        </section>
+
+        <section id="books">
+            <h2>View our Books</h2>
+            <p>Take a look at the books that we have</p>
+            <ul>
+            {% for book in books %}
+            <li>{{ book.title }} by {{ book.author }}</li>
+            {% endfor %}
+            </ul>
+        </section>
+
+        <section id="about">
+            <h2>About Book Store</h2>
+            <p>
+                Book Store is a place where you can view books online and discover new books
+            </p>
+        </section>
+
+        <section id="reccomend">
+            <h2>Reccomend a book</h2>
+            <p>If you would like to reccomend a book that we do not have, please let us know below</p>
+            <button type="button">Reccomend a book</button>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>I hope you enjoyed this webiste</p>
+    </footer>
+
+
+</body>
+</html>
+

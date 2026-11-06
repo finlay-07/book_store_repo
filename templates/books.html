@@ -1,0 +1,44 @@
+<html>
+<head>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Books</h1>
+    <table role="table">
+        <tr>
+            {% for book in books %}
+            <td>{{ book.title }} by {{ book.author }}
+            </td>
+            {% endfor %} 
+        </tr>
+        <tr>
+            <td><img src="../static//Scientist.jpg" alt="Book1"></td>
+            <td><img src="../static//moon.jpg" alt="Book1"></td>
+            <td><img src="../static//Dragons.jpg" alt="Book1"></td>
+            <td><img src="../static//gruffalo.jpg" alt="Book1"></td>
+        </tr>
+    </table>
+
+<form method="POST" action="/books">
+<label for="title">Title</label>
+<input type="text" id="title" name="title" placeholder="title"><br>
+
+<label for="author">Author</label>
+<input type="text" id="author" name="author" placeholder="author"><br>
+
+<input type="submit" value="Submit">
+</form>
+
+
+
+        </tr>
+
+    </table>
+    <ul>
+
+</ul>
+</body>
+</html>

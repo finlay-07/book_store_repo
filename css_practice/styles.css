@@ -1,0 +1,18 @@
+body {
+background-color: #f5f5f5;
+}
+
+h1 {
+text-align: center;
+color: #2247a1;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+
+}
+
+img {
+    border-radius: x solid black;
+}
